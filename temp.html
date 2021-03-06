@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgba(220, 232, 6, 0.823);
+
+        }
+
+        .container {
+            background: rgb(37, 37, 36);
+            width: 900px;
+            border: 3px solid rgb(65, 65, 65);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid rgb(14, 10, 10);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(71, 66, 75);
+
+
+        }
+
+        #personal {
+            float: left;
+            width: 60%;
+            height: 100mm;
+            background-color: rgb(117, 144, 201);
+            font-family: 'Playfair Display', serif;
+            font-size: larger;
+
+
+        }
+
+        #review {
+            float: right;
+            width: 32%;
+            background-color: rgb(182, 201, 201);
+            height: 100mm;
+        }
+
+
+        h1 {
+            background: rgb(37, 255, 92);
+            font-family: 'Ballet', cursive;
+
+        }
+
+        .para {
+            text-align: justify;
+            /*left, right */
+
+
+
+        }
+
+        form {
+            line-height: 10mm;
+        }
+
+        h3 {
+            text-align: center;
+            background-color: rgb(34, 4, 230);
+            color: rgb(204, 181, 213);
+        }
+
+        .required {
+            color: rgb(237, 7, 7);
+        }
+        #buttonplus {
+            width: 25px;
+            text-align: center;
+        }
+
+        #submit {
+            background-color: #24124d;
+            /* Green */
+            border: rgb(5, 4, 4);
+            padding: 1px 20px;
+            border-radius: 10mm;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        <center>Welcome to my Webpage</center>
+    </h1>
+    <div class="container">
+        <div id="upper"> 
+            <input type="button" value="Home" onclick="window.location.href='https://google.com'"> 
+            <input type="button" value="About Me" onclick="window.location.href='https://jagatnaskar.github.io/MySelf-Jag/Myself.html'"> 
+            <input type="button" value="Fav Books" onclick="window.location.href='https://jagatnaskar.github.io/Books/Favourite%20books.html'"> 
+            <input type="button" value="Feedback" onclick="window.location.href='http://www.wherever.com'">
+        </div>
+        <div id="personal" class="item">
+            <h3>Feedback</h3>
+            <p id="personalpara" class="para">
+            <form>
+                <lebel>First name:<span class="required">*</span>&nbsp;&nbsp;</lebel>
+                <input type="text" id="first_name" maxlength="40" required />
+                <span id="fnamev" style="color: red;"></span></br>
+                Middle name:
+                <input type="text" id="middle_name" maxlength="20" /><br>
+                Last name:
+                <span class="required">*</span>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="last_name" maxlength="40" />
+                <span id="lnamev" style="color: red;"></span></br>
+                <label for="Gender">Gender</label><span class="required">*</span><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>&nbsp;
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>&nbsp;
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <span id="genderv" style="color: red;"></span></br>
+                Sugession: <span class="required">*</span>&nbsp;&nbsp;
+                <input type="text" id="sugession" maxlength="200" />
+                <span id="suz" style="color: red;"></span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="submit">
+                    <input id="buttonplus" onclick="cpy()" value="+"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Reset"></span>
+            </form>
+            </p>
+        </div>
+        <div id="review" class="item">
+            <h3>Your review matters</h3>
+            <p id="hidden"></p>
+        </div>
+    </div>
+</body>
+<footer>
+    <center> Copyright 1999-2021 by Jme Data. All Rights Reserved.</center>
+</footer>
+<script src="main.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</html>
